@@ -1,5 +1,6 @@
 package ex01;
 
+//Classe abstrata Esporte, onde não se pode criar um objeto a partir dela.
 public abstract class Esporte {
 	  protected String esporte;
       protected String nome;

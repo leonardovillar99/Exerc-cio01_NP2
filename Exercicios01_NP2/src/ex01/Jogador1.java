@@ -9,12 +9,13 @@ public class Jogador1 extends Esporte {
 		this.idade = 34;		
 	}
 	
-	@Override //Sobrescrita dos métodos de Informações do Jogador
+	@Override //Sobrescrita dos métodos de Informações do Jogador (Linha 13 e 20)
 	public void InfoJogador() {
 		System.out.println("Apresentando o jogador:");
 	}
 	
-	//Os métodos Esportista e InfoJogador é colocado em todas as outras classes, porém, com sáidas de informações diferentes -> Polimorfismo
+	@Override
+	//Os métodos Esportista e InfoJogador são colocados em todas as outras classes, porém, com sáidas diferentes -> Polimorfismo
 	public void Esportista() {
 		System.out.println("\nEsporte Praticado: " + this.esporte + "\nNome: " + this.nome + "\nPosição: " + this.posicao + "\nTime: " + this.time + 
 				           "\nIdade: " + this.idade + " anos");
